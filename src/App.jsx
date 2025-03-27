@@ -69,6 +69,7 @@ function App() {
 
   return (
     <main>
+      <div className="pattern" />
       <div className="wrapper">
         <Header />
         <SearchBar search={search} setSearch={setSearch}/>
