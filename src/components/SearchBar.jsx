@@ -8,7 +8,7 @@ export default function SearchBar(props) {
     return (
         <div className="search">
           <div>
-            <img src="src/assets/search.svg" alt="search" />
+            <img src="/src/assets/search.svg" alt="search" />
             <input
             type="text"
             placeholder="Search through thousands of movies"
