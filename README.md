@@ -8,5 +8,6 @@ this an web app that is simple fetch movies from a movies api and display them. 
 
 * movie searching
 
+The project is being host on Netlify
 
-
+link to the site: https://kaymovieapp.netlify.app/ 
