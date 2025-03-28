@@ -1,3 +1,5 @@
+import search from "/src/assets/search.svg"
+
 export default function SearchBar(props) {
     const SearchSubmit = (event) => {
         if (event.key === 'Enter'){
@@ -8,7 +10,7 @@ export default function SearchBar(props) {
     return (
         <div className="search">
           <div>
-            <img src="/src/assets/search.svg" alt="search" />
+            <img src={search} alt="search" />
             <input
             type="text"
             placeholder="Search through thousands of movies"

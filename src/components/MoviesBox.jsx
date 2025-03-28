@@ -1,9 +1,12 @@
+import star from "/src/assets/star.svg"
+import no_movie from "/src/assets/no-movie.png"
+
 export default function MoviesBox(props) {
   return (
   <div className="movie-card all-movies ">
     <img
       src={props.poster_path ?
-        `https://image.tmdb.org/t/p/w500/${props.poster_path}` : '/src/assets/no-movie.png'}
+        `https://image.tmdb.org/t/p/w500/${props.poster_path}` : {no_movie}}
       alt={props.title}
     />
 
@@ -13,7 +16,7 @@ export default function MoviesBox(props) {
       <div className="content">
         <div className="rating">
           <p>rating: </p>
-          <img src="/src/assets/star.svg" alt="Star Icon" />
+          <img src={star} alt="Star Icon" />
           <p>{props.vote_average ? props.vote_average.toFixed(1) : 'N/A'}</p>
         </div>
 
